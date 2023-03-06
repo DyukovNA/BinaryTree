@@ -82,7 +82,7 @@ public final class Tree {
         return toFind(root, key);
     }
 
-    private static Node toFind(Node expNode, int key) {
+    private Node toFind(Node expNode, int key) {
         if (key == expNode.key) return expNode;
         if (key < expNode.key && expNode.leftChild != null) {
             return toFind(expNode.leftChild, key);
@@ -112,7 +112,7 @@ public final class Tree {
         } else toRemoveRoot(nodeToRemove);
     }
 
-    private static void toJoinNodes(Node parent, Node child) {
+    private void toJoinNodes(Node parent, Node child) {
         if (child.key < parent.key) {
             if (parent.leftChild == null) {
                 parent.leftChild = child;

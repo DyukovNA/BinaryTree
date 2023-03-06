@@ -28,6 +28,6 @@ public class Main {
         changedTree.insert(3);
         changedTree.insert(7);
         System.out.println(changedTree.find(4).getRightChild().getKey());
-        System.out.println(tree.find(4).getRightChild().getKey());
+        System.out.println(tree);
     }
 }
